@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.4.25 Release - RuneLite</title><meta name="description" content="New chat box input for Bank Tags and kills to level in XP Tracker"><meta name="author" content="Jordan"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/static/css/6.ed9d89f5.chunk.css" rel="stylesheet"><link href="/static/css/main.f2f4765b.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/static/css/4.cc64aac5.chunk.css"><script charset="utf-8" src="/static/js/4.b820a014.chunk.js"></script><script charset="utf-8" src="/static/js/66.4f46834f.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/runelite_logo_transparent.png" class="icon" alt="RuneLite"> </a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features">Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog">Blog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki">Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown">API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/http-service/">RuneLite HTTP API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag">Tags</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite">Become a patron</a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://runelite.net/discord" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><form class="form-inline"><button class="btn btn-primary" type="button">Login</button></form></li></ul></div></nav><div class="container" id="layout"><section id="blog"><div class="content-section"><h1>1.4.25 Release</h1><p class="text-muted"><span title="Thu Nov 08 2018 10:00:00 GMT+0000 (Coordinated Universal Time)">last year</span> by Jordan</p><div class="markdown-body news-page"><div><p>The <a href="https://github.com/runelite/runelite/wiki/Bank-Tags">Bank Tags plugin</a> now utilizes a new
+custom input box which includes a moveable typing cursor, multiple character selection, and mouse
+interaction. Additionally, as a result, editing tags will no longer clear any open bank searches.
+Huge thanks to <a href="https://github.com/Abextm">@Abextm</a> for writing the framework of the new chatbox,
+and to <a href="https://github.com/raiyni">@raiyni</a> for hooking it in to the bank tag plugin.</p>
+<p><img src="/img/blog/1.4.25-Release/enhanced-chatbox-input.gif" alt="Enhanced chatbox input"></p>
+<p>The <a href="https://github.com/runelite/runelite/wiki/XP-Tracker">XP Tracker plugin</a> will now display
+the remaining number of kills to reach a level in combat skills, rather than the number of actions.
+Thanks to <a href="https://github.com/deathbeam">@deathbeam</a> for this update.</p>
+<p><img src="/img/blog/1.4.25-Release/kills-to-level.png" alt="xp tracker: kills to level"></p>
+<p>When running RuneLite with custom chrome disabled, the sidebar switcher image will be a small
+Runescape-themed arrow in the upper-right corner of the screen. Thanks to
+<a href="https://github.com/deathbeam">@deathbeam</a> and
+<a href="https://github.com/abextm">@Abextm</a> for this improvement.</p>
+<p><img src="/img/blog/1.4.25-Release/sidebar-closer.png" alt="native chrome sidebar closer"></p>
+<p>There are also several smaller improvements and bug fixes, including:</p>
+<ul>
+<li>The <a href="https://github.com/runelite/runelite/wiki/WASD-Camera">WASD Camera plugin</a> will now prepends
+your player name to the chatbox text</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Examine">Examine plugin</a> will now perform price
+lookups on items examined within the looting bag interface</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Menu-Entry-Swapper">Menu Entry Swapper plugin</a> now
+offers a "Repairs" option swap for the dark mage</li>
+<li>A configuration option has been added to the
+<a href="https://github.com/runelite/runelite/wiki/Opponent-Information">Opponent Information plugin</a>
+which allows you to hide the "Opponent's opponent" line which ordinarily appears beneath the
+health bar in multi-combat zones</li>
+<li>Game overlays in the fixed viewport should now be more accurate</li>
+<li>Fix Werewolf agility course xp in the skill calculator</li>
+<li>Add Burgh de Rott shortcut to agility plugin</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Jordan</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 14 contributors this release!</p>
+<pre><code>Adam (3):
+      wasd plugin: add player name to chatbox text
+      player mixin: remove unused field
+      entity hider: check for players with no names
+
+Dylan Critz (1):
+      examine plugin: add looting bag item examine support
+
+Hydrox6 (2):
+      Make Twitch messages respect custom Chat Colours
+      chat message manager: fix update to not access varbits outside of client thread
+
+John McDonnell (1):
+      skill calculator: fix werewolf agility course xp
+
+Jordan Atwood (4):
+      inventory tags plugin: clean up plugin code
+      inventory tags plugin: Use MenuManager
+      Add JagexColors constants file, update Color uses
+      wasdcamera: Fix chat text color on transparent chatbox
+
+KasparRosin (1):
+      menu entry swapper: add dark mage repairs swap
+
+Lotto (2):
+      stretchedmode: fix size not being reset on plugin disable
+      stretchedmode: retain aspect ratio when scaling
+
+Max Weber (5):
+      cache: Correct Location loading
+      itemstats: Use correct crab meat
+      zoom: Adjust inner zoom limit to safe value
+      runelite-client: Don't check if customChrome is enabled after startup
+      runelite-client: Use Runescape themed closer for sidebar when overlaying
+
+MaxBartlett (1):
+      Add Burgh de Rott shortcut to agility plugin (#6380)
+
+Ron Young (6):
+      tag search should be startsWith not contains
+      Add BERSERKER_NECKLACE prayer bonus
+      ScriptEvent: import op, opbase, and source
+      BankTags: refactor to use ChatboxPanelManager
+      Bank tags: Preserve search when editing tags
+      Bank tags: Move search functions to a separate class
+
+Sam England (1):
+      Add food hover overlay for Thin and Fat Snail meat (#6362)
+
+Tomas Slusny (8):
+      Properly update last action times in Idle Notifier
+      Add support for lastCombatCountdown to combat idle
+      Make ItemVariationsMapping use generated json
+      Cleanup SwingUtil
+      Add support for hiding/showing sidebar button
+      Create NPC manager that can return HP for NPC
+      Create different action types for XpTracker plugin
+      Add support for kills left to XpTrackerPlugin
+
+Tyler Harding (1):
+      opponent info: add configuration for show opponent's opponent
+
+WooxSolo (5):
+      Improve hovered tile accuracy
+      Fix localToCanvas calculation on fixed screen
+      Remove viewportOffset calculation from prayer bar
+      Remove viewportOffset calculation from demonic gorillas
+      Remove viewportOffset from get2DGeometry
+</code></pre></div></div></div></section><section><div class="content-section"><footer><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a><a href="http://localhost:8000/atom.xml" class="float-right"><i class="fas fa-rss"></i> Subscribe via RSS</a></footer></div></section></div></div></div><script>!function(o){function e(e){for(var d,c,f=e[0],t=e[1],r=e[2],a=0,n=[];a<f.length;a++)c=f[a],Object.prototype.hasOwnProperty.call(l,c)&&l[c]&&n.push(l[c][0]),l[c]=0;for(d in t)Object.prototype.hasOwnProperty.call(t,d)&&(o[d]=t[d]);for(p&&p(e);n.length;)n.shift()();return b.push.apply(b,r||[]),u()}function u(){for(var e,d=0;d<b.length;d++){for(var c=b[d],f=!0,t=1;t<c.length;t++){var r=c[t];0!==l[r]&&(f=!1)}f&&(b.splice(d--,1),e=s(s.s=c[0]))}return e}var c={},i={1:0},l={1:0},b=[];function s(e){if(c[e])return c[e].exports;var d=c[e]={i:e,l:!1,exports:{}};return o[e].call(d.exports,d,d.exports,s),d.l=!0,d.exports}s.e=function(b){var e=[];i[b]?e.push(i[b]):0!==i[b]&&{3:1,4:1,5:1,7:1,8:1,9:1,10:1,11:1,12:1,13:1,14:1}[b]&&e.push(i[b]=new Promise(function(e,f){for(var d="static/css/"+({}[b]||b)+"."+{2:"31d6cfe0",3:"8635b00c",4:"cc64aac5",5:"cc64aac5",7:"fe8911b9",8:"f9fb36b9",9:"7105c3bd",10:"dfbc3683",11:"d5dee77a",12:"ff58d5af",13:"aabfbf21",14:"cdc15f6f",15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",84:"31d6cfe0",85:"31d6cfe0",86:"31d6cfe0",87:"31d6cfe0",88:"31d6cfe0",89:"31d6cfe0",90:"31d6cfe0",91:"31d6cfe0",92:"31d6cfe0",93:"31d6cfe0",94:"31d6cfe0",95:"31d6cfe0",96:"31d6cfe0",97:"31d6cfe0",98:"31d6cfe0",99:"31d6cfe0",100:"31d6cfe0",101:"31d6cfe0",102:"31d6cfe0",103:"31d6cfe0",104:"31d6cfe0",105:"31d6cfe0",106:"31d6cfe0",107:"31d6cfe0",108:"31d6cfe0",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"31d6cfe0",113:"31d6cfe0",114:"31d6cfe0",115:"31d6cfe0"}[b]+".chunk.css",t=s.p+d,c=document.getElementsByTagName("link"),r=0;r<c.length;r++){var a=(o=c[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(a===d||a===t))return e()}var n=document.getElementsByTagName("style");for(r=0;r<n.length;r++){var o;if((a=(o=n[r]).getAttribute("data-href"))===d||a===t)return e()}var u=document.createElement("link");u.rel="stylesheet",u.type="text/css",u.onload=e,u.onerror=function(e){var d=e&&e.target&&e.target.src||t,c=new Error("Loading CSS chunk "+b+" failed.\n("+d+")");c.code="CSS_CHUNK_LOAD_FAILED",c.request=d,delete i[b],u.parentNode.removeChild(u),f(c)},u.href=t,document.getElementsByTagName("head")[0].appendChild(u)}).then(function(){i[b]=0}));var c=l[b];if(0!==c)if(c)e.push(c[2]);else{var d=new Promise(function(e,d){c=l[b]=[e,d]});e.push(c[2]=d);var f,t=document.createElement("script");t.charset="utf-8",t.timeout=120,s.nc&&t.setAttribute("nonce",s.nc),t.src=s.p+"static/js/"+({}[b]||b)+"."+{2:"32d6079e",3:"e6d51ca7",4:"b820a014",5:"3b54ac2b",7:"f660547d",8:"b7a97692",9:"bdc6d4a8",10:"4e7f1d6d",11:"30995b7d",12:"78c8dd51",13:"3d0d4f68",14:"1381f659",15:"a464d2cd",16:"ac9a64c6",17:"4ef2083c",18:"d70e1e2e",19:"e937d569",20:"55d186da",21:"fc763039",22:"798a5f61",23:"38d13008",24:"6a9d4aab",25:"c33db2f3",26:"7b2e4f6c",27:"bd761fb5",28:"b7e21fde",29:"b689a2db",30:"33db22ce",31:"2456e0dd",32:"91e9f41c",33:"1b988d34",34:"efae83ed",35:"f9ddadf5",36:"82946d7e",37:"0081b943",38:"0251af51",39:"50f0fda1",40:"1dda9213",41:"81a98b70",42:"1c921119",43:"7de755b7",44:"a01135ab",45:"235d3570",46:"ccc0bc9d",47:"c9c134e5",48:"9886aa04",49:"010591f1",50:"9649324a",51:"1a06ea72",52:"25f72353",53:"24be3b88",54:"c75c5df1",55:"39972bf5",56:"25f23d48",57:"11cab5ea",58:"f842cfe3",59:"d482ae12",60:"d2fa431e",61:"826586fc",62:"850e5e8e",63:"dc5f463c",64:"47e12ba1",65:"90d2a61d",66:"4f46834f",67:"547fb85f",68:"4a7702be",69:"d984c06d",70:"2941e9ef",71:"dc1081a5",72:"9f9f8399",73:"d10aa27c",74:"b8785f82",75:"2df2909f",76:"ff1bedc5",77:"8376cdf9",78:"d8b85f72",79:"1eb959fe",80:"75d8878e",81:"019ea0ee",82:"0b2dda56",83:"e604ae2c",84:"be06d8c1",85:"81584bf1",86:"0325ace0",87:"03a63869",88:"ae3f52fe",89:"24d89fc6",90:"03b45c40",91:"f231b4b7",92:"d4b81568",93:"8a4e79b8",94:"f635d06c",95:"aced9a16",96:"d5b9c328",97:"8cacbdcb",98:"ca4b875f",99:"c4ad027e",100:"60521f29",101:"34f9f760",102:"bb0d8d2e",103:"54d16df0",104:"7588dda4",105:"a60ef434",106:"fd014102",107:"09025137",108:"82f83476",109:"bc72ad7b",110:"204da248",111:"1365b579",112:"c8d83429",113:"db4a26ca",114:"c519de17",115:"df87e6c2"}[b]+".chunk.js";var r=new Error;f=function(e){t.onerror=t.onload=null,clearTimeout(a);var d=l[b];if(0!==d){if(d){var c=e&&("load"===e.type?"missing":e.type),f=e&&e.target&&e.target.src;r.message="Loading chunk "+b+" failed.\n("+c+": "+f+")",r.name="ChunkLoadError",r.type=c,r.request=f,d[1](r)}l[b]=void 0}};var a=setTimeout(function(){f({type:"timeout",target:t})},12e4);t.onerror=t.onload=f,document.head.appendChild(t)}return Promise.all(e)},s.m=o,s.c=c,s.d=function(e,d,c){s.o(e,d)||Object.defineProperty(e,d,{enumerable:!0,get:c})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(d,e){if(1&e&&(d=s(d)),8&e)return d;if(4&e&&"object"==typeof d&&d&&d.__esModule)return d;var c=Object.create(null);if(s.r(c),Object.defineProperty(c,"default",{enumerable:!0,value:d}),2&e&&"string"!=typeof d)for(var f in d)s.d(c,f,function(e){return d[e]}.bind(null,f));return c},s.n=function(e){var d=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(d,"a",d),d},s.o=function(e,d){return Object.prototype.hasOwnProperty.call(e,d)},s.p="/",s.oe=function(e){throw console.error(e),e};var d=this["webpackJsonprunelite.net"]=this["webpackJsonprunelite.net"]||[],f=d.push.bind(d);d.push=e,d=d.slice();for(var t=0;t<d.length;t++)e(d[t]);var p=f;u()}([])</script><script src="/static/js/6.b9f38dd0.chunk.js"></script><script src="/static/js/main.40aac999.chunk.js"></script></body></html>
